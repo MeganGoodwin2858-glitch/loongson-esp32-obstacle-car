@@ -4,7 +4,7 @@
 
 团队文档更新日期为 2026-11-09。新组员可先阅读 [上手流程](docs/getting-started.md)，按负责模块查找源码和验证入口。
 
-目标仓库为 [MeganGoodwin2858-glitch/loongson-esp32-obstacle-car](https://github.com/MeganGoodwin2858-glitch/loongson-esp32-obstacle-car)。当前仓库可见性为公开，上传状态见 [GitHub 交付记录](docs/github-status.md)。
+完整工程已上传到 [MeganGoodwin2858-glitch/loongson-esp32-obstacle-car](https://github.com/MeganGoodwin2858-glitch/loongson-esp32-obstacle-car) 的 `main` 分支，仓库可见性为公开。上传与逐文件核对记录见 [GitHub 交付记录](docs/github-status.md)。
 
 ## 当前进度
 
