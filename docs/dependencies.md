@@ -8,6 +8,19 @@
 
 Git 忽略 `managed_components/`，克隆后按锁文件联网恢复，或使用独立依赖 ZIP。离线包的角色是保留本次实际使用的依赖，ESP-IDF、编译器、CMake、Ninja、Visual Studio、Node.js 和 Python 安装由各开发电脑准备。
 
+## 离线包核对与解压
+
+依赖包文件名为 `loongson-esp32-dependencies.zip`，大小为 293,993,121 字节，SHA256 为 `b21228660f892a34cb360aecff2a8155acc333a85b3f177c1cfbb6d876cbd6fe`。包内有 8,414 个文件，其中 8,304 项列入组件自己的校验清单。
+
+将依赖 ZIP 放到工程根目录，在 PowerShell 执行。
+
+```powershell
+Get-FileHash -LiteralPath .\loongson-esp32-dependencies.zip -Algorithm SHA256
+Expand-Archive -LiteralPath .\loongson-esp32-dependencies.zip -DestinationPath .
+```
+
+核对输出哈希后解压，目录应为根目录下的 `managed_components/`。随后按 [构建说明](build-and-test.md)配置并编译。解压时若发现同名文件，先核对现有组件与锁文件版本，再确定使用哪份依赖。
+
 ## 已保留授权信息
 
 - 根目录 `LICENSE` 来自上传工程，内容为 MIT License，并保留原著作权声明。

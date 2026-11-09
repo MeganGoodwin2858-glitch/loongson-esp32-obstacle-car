@@ -42,6 +42,8 @@
 
 `docs/upstream/` 保存原工程说明，`docs/history/` 保存过去分阶段的 README。其中包含当时“烧录前”或“尚待通信验证”等状态，应结合当前 `README.md`、`CHANGELOG.md` 与检测日期阅读。
 
+2026-11-09，将龙芯开发阶段 README 按原始字节归档为 `docs/history/README_loongson.md`，逐文件清单继续记录其来源和哈希。`loongson/README.md` 更新为当前运行入口和验证进度，新增上手、排查和测试记录模板。
+
 供应商六个 ZIP 的文件目录、已有哈希和设备树核对记录归入 `supplier-archive-index.json`。相关原理图页、引脚图与设备树片段保留在 `docs/evidence/`。大体积 SDK、系统镜像、内核和 U-Boot 压缩包留作外部资料，索引可供追溯。
 
 ## 待补资料

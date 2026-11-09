@@ -2,6 +2,8 @@
 
 团队协作源码快照，整理日期为 2026-11-06。资料来自“添加 BLE 手机小车控制”对话对应的本地工程、用户上传源码和后续交付包。目录保留 ESP-IDF 工程结构，便于组员继续编译、测试和修改。
 
+团队文档更新日期为 2026-11-09。新组员可先阅读 [上手流程](docs/getting-started.md)，按负责模块查找源码和验证入口。
+
 目标仓库为 [MeganGoodwin2858-glitch/loongson-esp32-obstacle-car](https://github.com/MeganGoodwin2858-glitch/loongson-esp32-obstacle-car)。当前仓库可见性为公开，上传状态见 [GitHub 交付记录](docs/github-status.md)。
 
 ## 当前进度
@@ -63,6 +65,8 @@
 ## 团队协作
 
 开始工作前查看 [版本记录](CHANGELOG.md)、[待办](TODO.md)和 [协作约定](docs/collaboration.md)。提交硬件进展时附上日期、板型、源码版本、接线、操作和测试结果，区分桌面测试、协议通信与实车验收。
+
+[故障排查](docs/troubleshooting.md)覆盖网页控制、UART、自动使能、测距、OLED 和构建问题。[测试记录模板](docs/test-record.md)可直接用于任务与合并请求。
 
 [源码恢复与来源说明](docs/recovery.md)列出已找到的文件和待补资料。[逐文件清单](docs/source-inventory.json)保存原始来源、SHA256 和与上传版本的比较结果。
 

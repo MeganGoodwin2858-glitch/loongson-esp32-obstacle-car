@@ -7518,7 +7518,7 @@
       "comparison_to_upload": "added_after_upload"
     },
     {
-      "path": "loongson/README.md",
+      "path": "docs/history/README_loongson.md",
       "source": "work/car-v2/loongson/README.md",
       "bytes": 6500,
       "sha256": "fcc8074109d78096fbfe272ab31d00b2b23a3c7c70b1b985a4992510451875e4",
@@ -8112,5 +8112,11 @@
       "sha256": "05dbabb7932add4171448699bd64f5f8545893e8a40b112da9f6af871bbc3977",
       "comparison_to_upload": "historical_evidence"
     }
-  ]
+  ],
+  "repository_document_updates": {
+    "date": "2026-11-09",
+    "archived_readme": "docs/history/README_loongson.md",
+    "generated_current_readme": "loongson/README.md",
+    "reason": "Replace historical validation wording with current, dated evidence links."
+  }
 }
