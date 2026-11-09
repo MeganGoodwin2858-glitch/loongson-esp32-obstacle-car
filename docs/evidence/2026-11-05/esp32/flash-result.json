@@ -1,0 +1,48 @@
+{
+  "write_offsets": [
+    "0x20000"
+  ],
+  "motion_commands_sent": false,
+  "steps": [
+    {
+      "name": "chip-identity",
+      "exit": 0
+    },
+    {
+      "name": "backup-read",
+      "exit": 0
+    },
+    {
+      "name": "backup-independent-verify",
+      "exit": 0
+    },
+    {
+      "name": "assets-preflight",
+      "exit": 0
+    },
+    {
+      "name": "application-write",
+      "exit": 0
+    },
+    {
+      "name": "application-verify",
+      "exit": 0
+    },
+    {
+      "name": "application-readback",
+      "exit": 0
+    },
+    {
+      "name": "boot-config-nvs-ota-preserved",
+      "exit": 0
+    }
+  ],
+  "application_sha256": "b060df01fef4fcde3aaacb31004f022c9768088b8fe14ebc7c3e941acfe76adf",
+  "application_bytes": 3086688,
+  "port": "COM13",
+  "backup_sha256": "3225b3bd111fb77bb786845956c4fbc2debcf54d667e0e2d3d9ce2d1b0a2ca8a",
+  "readback_sha256": "b060df01fef4fcde3aaacb31004f022c9768088b8fe14ebc7c3e941acfe76adf",
+  "readback_matches": true,
+  "boot_config_nvs_ota_preserved": true,
+  "flashing_verified": true
+}

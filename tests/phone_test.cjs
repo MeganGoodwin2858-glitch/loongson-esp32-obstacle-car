@@ -1,0 +1,36 @@
+const assert=require('node:assert/strict');
+const {frame,parseStatus,Sender,crc}=require('../phone/controller.js');
+const bytes=frame(1,75,0x12345678,-999,700,0x87654321,0);
+assert.equal(bytes.length,20);assert.equal(bytes[0],0xa5);
+assert.equal(new DataView(bytes.buffer).getInt16(8,true),-999);
+assert.equal(new DataView(bytes.buffer).getUint32(12,true),0x87654321);
+// CCITT-FALSE standard vector, independent of the encoder.
+assert.equal(crc(new TextEncoder().encode('123456789')),0x29b1);
+assert.throws(()=>frame(1,101,1,0,0,1,0));
+assert.throws(()=>frame(1,40,1,1001,0,1,0));
+const state=new Uint8Array(20);state.set([0x5a,1,0,4,2,0,0,0]);
+new DataView(state.buffer).setUint16(18,crc(state.subarray(0,18)),true);
+assert.equal(parseStatus(state).session,2);
+assert.throws(()=>parseStatus(state.subarray(0,19)));
+let packets=[],release,now=100;
+const sender=new Sender(async b=>{packets.push([...b]);if(packets.length===1)await new Promise(r=>release=r);},async()=>parseStatus(state),()=>now);
+(async()=>{
+  sender.drive(0,1000,40);await new Promise(r=>setImmediate(r));
+  for(let i=0;i<20;i++)sender.drive(i,1000,40);
+  const stopped=sender.control(2);release();await stopped;await sender.idle();
+  assert.deepEqual(packets.map(p=>p[2]),[1,2]);
+  assert.equal(packets[1][8],0);assert.equal(packets[1][10],0);
+  packets=[];
+  let release2;
+  const s2=new Sender(async b=>{packets.push([...b]);if(packets.length===1)await new Promise(r=>release2=r);},async()=>parseStatus(state),()=>now);
+  s2.drive(0,1000,40);await new Promise(r=>setImmediate(r));s2.drive(1000,0,40);now=1000;release2();await s2.idle();
+  assert.equal(packets.length,1,'expired motion must not be replayed');
+  packets=[];let release3;
+  const s3=new Sender(async b=>{packets.push([...b]);if(packets.length===1)await new Promise(r=>release3=r);},async()=>parseStatus(state),()=>now);
+  s3.drive(0,1000,40);await new Promise(r=>setImmediate(r));
+  const modes=[s3.control(6,2),s3.control(3),s3.control(6,0),s3.control(3)];
+  const emergency=s3.control(4);const releaseStop=s3.control(2);release3();
+  await Promise.all([...modes,emergency,releaseStop]);await s3.idle();
+  assert.deepEqual(packets.map(p=>p[2]),[1,4],'emergency must preempt controls and survive a following release STOP');
+  console.log('PASS: phone CRC, validation, coalescing, STOP priority and stale-drive behavior');
+})().catch(e=>{console.error(e);process.exitCode=1;});

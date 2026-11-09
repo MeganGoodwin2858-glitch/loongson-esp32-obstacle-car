@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-06",
+  "idf": "5.5.4",
+  "target": "esp32s3",
+  "board": "qebabe-xiaoche",
+  "project_version": "2.1.0",
+  "build_exit": 0,
+  "firmware_image_checksum_valid": true,
+  "firmware_image_hash_valid": true,
+  "host_tests": {
+    "core_checks": 6699,
+    "http_checks": 14,
+    "range_checks": 47,
+    "node_passed": true,
+    "python_tests": 49,
+    "python_skipped": 0
+  },
+  "build_files": [
+    {
+      "path": "xiaozhi.bin",
+      "bytes": 3086688,
+      "sha256": "7996ff9bc87d6f2667836d2eb9edbb185dd35ca4761e12ef222a19b9aca6e0f6"
+    },
+    {
+      "path": "bootloader/bootloader.bin",
+      "bytes": 15040,
+      "sha256": "4dcef2652f167d2730f5187ca02a6e62031d2cc8e05e1105306490118cf3ea94"
+    },
+    {
+      "path": "partition_table/partition-table.bin",
+      "bytes": 3072,
+      "sha256": "4811619cacae08ef2e0e71b7220c6033a346ca5da7ca179082408c963ef530b5"
+    },
+    {
+      "path": "generated_assets.bin",
+      "bytes": 291201,
+      "sha256": "2b96dfd0de43c461c7c60ed69fc0137f225c2fba4657746f5d4046ddf94c0cb6"
+    }
+  ]
+}

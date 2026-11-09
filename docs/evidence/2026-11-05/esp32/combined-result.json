@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-05",
+  "esp32_flash": {
+    "write_offsets": [
+      "0x20000"
+    ],
+    "motion_commands_sent": false,
+    "steps": [
+      {
+        "name": "chip-identity",
+        "exit": 0
+      },
+      {
+        "name": "backup-read",
+        "exit": 0
+      },
+      {
+        "name": "backup-independent-verify",
+        "exit": 0
+      },
+      {
+        "name": "assets-preflight",
+        "exit": 0
+      },
+      {
+        "name": "application-write",
+        "exit": 0
+      },
+      {
+        "name": "application-verify",
+        "exit": 0
+      },
+      {
+        "name": "application-readback",
+        "exit": 0
+      },
+      {
+        "name": "boot-config-nvs-ota-preserved",
+        "exit": 0
+      }
+    ],
+    "application_sha256": "b060df01fef4fcde3aaacb31004f022c9768088b8fe14ebc7c3e941acfe76adf",
+    "application_bytes": 3086688,
+    "port": "COM13",
+    "backup_sha256": "3225b3bd111fb77bb786845956c4fbc2debcf54d667e0e2d3d9ce2d1b0a2ca8a",
+    "readback_sha256": "b060df01fef4fcde3aaacb31004f022c9768088b8fe14ebc7c3e941acfe76adf",
+    "readback_matches": true,
+    "boot_config_nvs_ota_preserved": true,
+    "flashing_verified": true
+  },
+  "startup": {
+    "port": "COM13",
+    "observed_seconds": 30.062,
+    "bytes": 13853,
+    "reset_records": 1,
+    "fault": null,
+    "hcsr04_init": true,
+    "ble_init": true,
+    "ble_advertising": true,
+    "wifi_ip": [
+      "ip: 192.168.1.106"
+    ],
+    "motion_commands_sent": false,
+    "stable_30_seconds": true,
+    "final_state": "application running; no motion commands sent"
+  },
+  "uart_forward": {
+    "seconds": 10.033213881000165,
+    "bytes": 7880,
+    "counts": {
+      "status": 197,
+      "telemetry": 197
+    },
+    "driver_before": {
+      "tx": 0,
+      "rx": 240
+    },
+    "driver_after": {
+      "tx": 0,
+      "rx": 8120
+    },
+    "driver_delta": {
+      "tx": 0,
+      "rx": 7880
+    },
+    "warmup_counts": {
+      "status": 6,
+      "telemetry": 6
+    },
+    "raw_prefix": "5a010008541a936f356ee00a000000000000b9675b010003356ee00a57130000b9006e003804aa7b5a010008541a936f356ee00a000000000000b9675b010003356ee00a58130000ac004600ec03176f",
+    "first_status": [
+      {
+        "kind": "status",
+        "mode": 0,
+        "flags": 8,
+        "session": 1871911508,
+        "auto_session": 182480437,
+        "left": 0,
+        "right": 0
+      }
+    ],
+    "last_status": [
+      {
+        "kind": "status",
+        "mode": 0,
+        "flags": 8,
+        "session": 1871911508,
+        "auto_session": 182480437,
+        "left": 0,
+        "right": 0
+      }
+    ],
+    "range_results": {
+      "0": 194,
+      "2": 3
+    },
+    "valid_range_samples": 194,
+    "distance_min_mm": 27,
+    "distance_max_mm": 439,
+    "last_range": [
+      {
+        "kind": "telemetry",
+        "result": 0,
+        "flags": 7,
+        "auto_session": 182480437,
+        "sample_seq": 5062,
+        "distance_mm": 62,
+        "age_ms": 60,
+        "echo_us": 361
+      }
+    ],
+    "errors": [],
+    "protocol_commands_sent": 0
+  },
+  "uart_reverse": {
+    "nonzero_drive_sent": false,
+    "uart_op_sent": "ESTOP only",
+    "initial": {
+      "ok": true,
+      "ready": true,
+      "armed": false,
+      "estop": false,
+      "ble": false,
+      "web": false,
+      "mode": 0,
+      "left": 0,
+      "right": 0,
+      "session": 0
+    },
+    "console_exit": 0,
+    "after": {
+      "ok": true,
+      "ready": true,
+      "armed": false,
+      "estop": true,
+      "ble": false,
+      "web": false,
+      "mode": 0,
+      "left": 0,
+      "right": 0,
+      "session": 0
+    },
+    "uart_estop_acknowledged": true,
+    "clear": {
+      "ok": true,
+      "ready": true,
+      "armed": false,
+      "estop": false,
+      "ble": false,
+      "web": false,
+      "mode": 0,
+      "left": 0,
+      "right": 0,
+      "session": 0
+    },
+    "final": {
+      "ok": true,
+      "ready": true,
+      "armed": false,
+      "estop": false,
+      "ble": false,
+      "web": false,
+      "mode": 0,
+      "left": 0,
+      "right": 0,
+      "session": 0
+    }
+  },
+  "oled_user_feedback": "always black after reflash",
+  "oled_visual_verified": false,
+  "nonzero_motion_sent": false,
+  "loongson_reflashed": false,
+  "firmware_source_changed_this_round": false
+}

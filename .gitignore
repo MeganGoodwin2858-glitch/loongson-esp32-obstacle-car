@@ -1,0 +1,56 @@
+# Build output
+/build/
+/build-*/
+/managed_components/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+*.o
+*.obj
+*.a
+*.elf
+*.map
+*.exe
+*.exp
+*.lib
+
+# Local ESP-IDF configuration. The reviewed snapshot is config/sdkconfig.car.
+/sdkconfig
+/sdkconfig.old
+/sdkconfig.old.*
+
+# Local environments and editor state
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+.cache/
+.cloudbase/
+.DS_Store
+Thumbs.db
+
+# Credentials and device backups
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+nvs*.bin
+*readback*.bin
+*backup*.bin
+previous-ota*.bin
+boot-config.bin
+
+# Packaged deliveries and local logs
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tar.xz
+*.log
+/work/

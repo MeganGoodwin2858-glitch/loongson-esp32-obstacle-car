@@ -1,0 +1,16 @@
+{
+  "port": "COM13",
+  "observed_seconds": 30.062,
+  "bytes": 13853,
+  "reset_records": 1,
+  "fault": null,
+  "hcsr04_init": true,
+  "ble_init": true,
+  "ble_advertising": true,
+  "wifi_ip": [
+    "ip: 192.168.1.106"
+  ],
+  "motion_commands_sent": false,
+  "stable_30_seconds": true,
+  "final_state": "application running; no motion commands sent"
+}

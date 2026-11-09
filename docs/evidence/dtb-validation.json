@@ -1,0 +1,24 @@
+{
+  "ls2k300_vanguard_pi_func2.dtb": {
+    "serial2": "/2k300-soc/serial@0x16100800",
+    "status": "okay",
+    "reg": [
+      "0x0",
+      "0x16100800",
+      "0x0",
+      "0x10"
+    ],
+    "stdout": "serial0:115200n8"
+  },
+  "ls2k300_vanguard_pi_pi_hat.dtb": {
+    "serial2": "/2k300-soc/serial@0x16100800",
+    "status": "ok",
+    "reg": [
+      "0x0",
+      "0x16100800",
+      "0x0",
+      "0x10"
+    ],
+    "stdout": "serial0:115200n8"
+  }
+}

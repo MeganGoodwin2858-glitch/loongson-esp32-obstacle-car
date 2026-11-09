@@ -1,0 +1,68 @@
+{
+  "seconds": 10.033213881000165,
+  "bytes": 7880,
+  "counts": {
+    "status": 197,
+    "telemetry": 197
+  },
+  "driver_before": {
+    "tx": 0,
+    "rx": 240
+  },
+  "driver_after": {
+    "tx": 0,
+    "rx": 8120
+  },
+  "driver_delta": {
+    "tx": 0,
+    "rx": 7880
+  },
+  "warmup_counts": {
+    "status": 6,
+    "telemetry": 6
+  },
+  "raw_prefix": "5a010008541a936f356ee00a000000000000b9675b010003356ee00a57130000b9006e003804aa7b5a010008541a936f356ee00a000000000000b9675b010003356ee00a58130000ac004600ec03176f",
+  "first_status": [
+    {
+      "kind": "status",
+      "mode": 0,
+      "flags": 8,
+      "session": 1871911508,
+      "auto_session": 182480437,
+      "left": 0,
+      "right": 0
+    }
+  ],
+  "last_status": [
+    {
+      "kind": "status",
+      "mode": 0,
+      "flags": 8,
+      "session": 1871911508,
+      "auto_session": 182480437,
+      "left": 0,
+      "right": 0
+    }
+  ],
+  "range_results": {
+    "0": 194,
+    "2": 3
+  },
+  "valid_range_samples": 194,
+  "distance_min_mm": 27,
+  "distance_max_mm": 439,
+  "last_range": [
+    {
+      "kind": "telemetry",
+      "result": 0,
+      "flags": 7,
+      "auto_session": 182480437,
+      "sample_seq": 5062,
+      "distance_mm": 62,
+      "age_ms": 60,
+      "echo_us": 361
+    }
+  ],
+  "errors": [],
+  "protocol_commands_sent": 0
+}

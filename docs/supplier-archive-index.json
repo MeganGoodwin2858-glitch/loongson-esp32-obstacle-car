@@ -1,0 +1,836 @@
+{
+  "input_integrity": {
+    "原理图": {
+      "bytes": 24720902,
+      "sha256": "b1629c1c211aa4a259c6cc798811a48ac72825272f43068a6617b6cce0fa0fa9"
+    },
+    "固件": {
+      "bytes": 36107909,
+      "sha256": "0074d4fdb8a4666ad6cffee5bda982c2b7db87eb43bf3c73e13f0ba62a7717ee"
+    },
+    "内核": {
+      "bytes": 193854292,
+      "sha256": "1f043e91b1ec212c4d67ed884fb1e7426b70574893b3a827016832fb49abe5e8"
+    },
+    "用户手册": {
+      "bytes": 405022518,
+      "sha256": "754c1e5a816020c38d74632cac338e698bfee602627fe297640c4b90c5028ef2"
+    },
+    "芯片手册": {
+      "bytes": 5440695,
+      "sha256": "e40e4d4eaed291f605329fb76474f29092017e74aea3c43ddb055bd9c0817656"
+    },
+    "常用工具软件": {
+      "bytes": 1052184090,
+      "sha256": "ad72b3e908e111b1bd6f748e42b477634968391e0c99db674d9e438d16e1d232"
+    },
+    "compiled_kernel_index": [
+      {
+        "path": "linux-6.12-2k300-31651021c-build.20250702083908/ls2k300_vanguard_pi_func2.dtb",
+        "bytes": 22429
+      },
+      {
+        "path": "linux-6.12-2k300-31651021c-build.20250702083908/ls2k300_vanguard_pi_pi_hat.dtb",
+        "bytes": 22738
+      }
+    ]
+  },
+  "dtb_validation": {
+    "ls2k300_vanguard_pi_func2.dtb": {
+      "serial2": "/2k300-soc/serial@0x16100800",
+      "status": "okay",
+      "reg": [
+        "0x0",
+        "0x16100800",
+        "0x0",
+        "0x10"
+      ],
+      "stdout": "serial0:115200n8"
+    },
+    "ls2k300_vanguard_pi_pi_hat.dtb": {
+      "serial2": "/2k300-soc/serial@0x16100800",
+      "status": "ok",
+      "reg": [
+        "0x0",
+        "0x16100800",
+        "0x0",
+        "0x10"
+      ],
+      "stdout": "serial0:115200n8"
+    }
+  },
+  "archive_index": {
+    "原理图": [
+      {
+        "zip_member": "01-原理图/先锋派/G2K03Z1_V1.1丝印文件1.PDF",
+        "path": "01-原理图/先锋派/G2K03Z1_V1.1丝印文件1.PDF",
+        "bytes": 2228628
+      },
+      {
+        "zip_member": "01-原理图/先锋派/PDF_G2K03Z1_V1.1.pdf",
+        "path": "01-原理图/先锋派/PDF_G2K03Z1_V1.1.pdf",
+        "bytes": 5563297
+      },
+      {
+        "zip_member": "01-原理图/先锋派/功能框图.jpg",
+        "path": "01-原理图/先锋派/功能框图.jpg",
+        "bytes": 313960
+      },
+      {
+        "zip_member": "01-原理图/先锋派/引脚复用图.png",
+        "path": "01-原理图/先锋派/引脚复用图.png",
+        "bytes": 149803
+      },
+      {
+        "zip_member": "01-原理图/先锋派/硬件接口图.jpg",
+        "path": "01-原理图/先锋派/硬件接口图.jpg",
+        "bytes": 2185221
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/G2K03Z0_V1.1.pdf",
+        "path": "01-原理图/蜂鸟板/G2K03Z0_V1.1.pdf",
+        "bytes": 1154827
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/GBKPAW0_V11_SILK.pdf",
+        "path": "01-原理图/蜂鸟板/GBKPAW0_V11_SILK.pdf",
+        "bytes": 290839
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/GBKPAW0_V1.1.pdf",
+        "path": "01-原理图/蜂鸟板/GBKPAW0_V1.1.pdf",
+        "bytes": 961232
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/功能接口图.png",
+        "path": "01-原理图/蜂鸟板/功能接口图.png",
+        "bytes": 351689
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/尺寸.png",
+        "path": "01-原理图/蜂鸟板/尺寸.png",
+        "bytes": 166767
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/开发板实物图.png",
+        "path": "01-原理图/蜂鸟板/开发板实物图.png",
+        "bytes": 541852
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/开发板实物图1.png",
+        "path": "01-原理图/蜂鸟板/开发板实物图1.png",
+        "bytes": 402081
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/接口定义图.png",
+        "path": "01-原理图/蜂鸟板/接口定义图.png",
+        "bytes": 681940
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/核心板实物图.png",
+        "path": "01-原理图/蜂鸟板/核心板实物图.png",
+        "bytes": 307676
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/核心板实物图1.png",
+        "path": "01-原理图/蜂鸟板/核心板实物图1.png",
+        "bytes": 316518
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/核心板尺寸.pdf",
+        "path": "01-原理图/蜂鸟板/核心板尺寸.pdf",
+        "bytes": 23530
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/设计源文件/Core/Core_Footprint.7z",
+        "path": "01-原理图/蜂鸟板/设计源文件/Core/Core_Footprint.7z",
+        "bytes": 25806
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/设计源文件/MB/GBKPAW0_V11.brd",
+        "path": "01-原理图/蜂鸟板/设计源文件/MB/GBKPAW0_V11.brd",
+        "bytes": 6742636
+      },
+      {
+        "zip_member": "01-原理图/蜂鸟板/设计源文件/MB/GBKPAW0_V11.DSN",
+        "path": "01-原理图/蜂鸟板/设计源文件/MB/GBKPAW0_V11.DSN",
+        "bytes": 2309120
+      }
+    ],
+    "固件": [
+      {
+        "zip_member": "02-固件/源码/u-boot-2022.4-master-src-78ecd52.zip",
+        "path": "02-固件/源码/u-boot-2022.4-master-src-78ecd52.zip",
+        "bytes": 32447812
+      },
+      {
+        "zip_member": "02-固件/二进制文件/先锋派/u-boot-with-spl.bin",
+        "path": "02-固件/二进制文件/先锋派/u-boot-with-spl.bin",
+        "bytes": 931496
+      },
+      {
+        "zip_member": "02-固件/二进制文件/工业开发板/u-boot-2022.04-2k300-gongkong_gbkpgk0-v2.0-78ecd528-build.20250221143203.tar.gz",
+        "path": "02-固件/二进制文件/工业开发板/u-boot-2022.04-2k300-gongkong_gbkpgk0-v2.0-78ecd528-build.20250221143203.tar.gz",
+        "bytes": 422118
+      },
+      {
+        "zip_member": "02-固件/二进制文件/工业开发板/u-boot-with-spl.bin",
+        "path": "02-固件/二进制文件/工业开发板/u-boot-with-spl.bin",
+        "bytes": 943232
+      },
+      {
+        "zip_member": "02-固件/二进制文件/蜂鸟板/u-boot-2022.04-2k300-mini-dp-v2.0-78ecd528-build.20250220164738.tar.gz",
+        "path": "02-固件/二进制文件/蜂鸟板/u-boot-2022.04-2k300-mini-dp-v2.0-78ecd528-build.20250220164738.tar.gz",
+        "bytes": 420847
+      },
+      {
+        "zip_member": "02-固件/二进制文件/蜂鸟板/u-boot-with-spl.bin",
+        "path": "02-固件/二进制文件/蜂鸟板/u-boot-with-spl.bin",
+        "bytes": 940928
+      }
+    ],
+    "内核": [
+      {
+        "zip_member": "03-内核/Chanage.txt",
+        "path": "03-内核/Chanage.txt",
+        "bytes": 287
+      },
+      {
+        "zip_member": "03-内核/二进制文件/linux-6.12-2k300-31651021c-build.20250702083908.tar.gz",
+        "path": "03-内核/二进制文件/linux-6.12-2k300-31651021c-build.20250702083908.tar.gz",
+        "bytes": 16503030
+      },
+      {
+        "zip_member": "03-内核/二进制文件/linux-6.12-2k300-rt-31651021c-build.20250703084742.tar.gz",
+        "path": "03-内核/二进制文件/linux-6.12-2k300-rt-31651021c-build.20250703084742.tar.gz",
+        "bytes": 16602023
+      },
+      {
+        "zip_member": "03-内核/二进制文件/uImage",
+        "path": "03-内核/二进制文件/uImage",
+        "bytes": 10275954
+      },
+      {
+        "zip_member": "03-内核/源码/linux-6.12-master-src-d08d15e-build.20250414170451.tar.xz",
+        "path": "03-内核/源码/linux-6.12-master-src-d08d15e-build.20250414170451.tar.xz",
+        "bytes": 150471596
+      },
+      {
+        "zip_member": "03-内核/源码/linux-6.12-master-src-d08d15e-build.20250414170451.tar.xz.md5",
+        "path": "03-内核/源码/linux-6.12-master-src-d08d15e-build.20250414170451.tar.xz.md5",
+        "bytes": 92
+      }
+    ],
+    "用户手册": [
+      {
+        "zip_member": "06-用户手册/pyqt.pdf",
+        "path": "06-用户手册/pyqt.pdf",
+        "bytes": 124026
+      },
+      {
+        "zip_member": "06-用户手册/使用Qemu调试LoongArch应用程序.pdf",
+        "path": "06-用户手册/使用Qemu调试LoongArch应用程序.pdf",
+        "bytes": 99770
+      },
+      {
+        "zip_member": "06-用户手册/使用QtCreator交叉编译与调试LoongArch程序.pdf",
+        "path": "06-用户手册/使用QtCreator交叉编译与调试LoongArch程序.pdf",
+        "bytes": 1528025
+      },
+      {
+        "zip_member": "06-用户手册/广东龙芯2K0300用户手册V2.1.pdf",
+        "path": "06-用户手册/广东龙芯2K0300用户手册V2.1.pdf",
+        "bytes": 17770814
+      },
+      {
+        "zip_member": "06-用户手册/龙芯2K0300先锋派&蜂鸟板源码编译操作指南-v2.0.pdf",
+        "path": "06-用户手册/龙芯2K0300先锋派&蜂鸟板源码编译操作指南-v2.0.pdf",
+        "bytes": 148102
+      },
+      {
+        "zip_member": "06-用户手册/LoongArch/la-asm-manual-v1.1.pdf",
+        "path": "06-用户手册/LoongArch/la-asm-manual-v1.1.pdf",
+        "bytes": 2900110
+      },
+      {
+        "zip_member": "06-用户手册/LoongArch/LoongArch 系统调用(syscall)ABI.pdf",
+        "path": "06-用户手册/LoongArch/LoongArch 系统调用(syscall)ABI.pdf",
+        "bytes": 135593
+      },
+      {
+        "zip_member": "06-用户手册/LoongArch/LoongArch-ELF-ABI-CN.pdf",
+        "path": "06-用户手册/LoongArch/LoongArch-ELF-ABI-CN.pdf",
+        "bytes": 807086
+      },
+      {
+        "zip_member": "06-用户手册/LoongArch/LoongArch-工具链约定.pdf",
+        "path": "06-用户手册/LoongArch/LoongArch-工具链约定.pdf",
+        "bytes": 731503
+      },
+      {
+        "zip_member": "06-用户手册/LoongArch/计算机体系结构基础(LoongArch)-3rd.pdf",
+        "path": "06-用户手册/LoongArch/计算机体系结构基础(LoongArch)-3rd.pdf",
+        "bytes": 15193248
+      },
+      {
+        "zip_member": "06-用户手册/LoongArch/龙芯CPU统一系统架构规范(适用于 LA 架构通用 PC、服务器系列).pdf",
+        "path": "06-用户手册/LoongArch/龙芯CPU统一系统架构规范(适用于 LA 架构通用 PC、服务器系列).pdf",
+        "bytes": 33549031
+      },
+      {
+        "zip_member": "06-用户手册/LoongArch/龙芯平台软件迁移适配--LoongArch.pdf",
+        "path": "06-用户手册/LoongArch/龙芯平台软件迁移适配--LoongArch.pdf",
+        "bytes": 10161760
+      },
+      {
+        "zip_member": "06-用户手册/LoongArch/龙芯架构参考手册卷一.pdf",
+        "path": "06-用户手册/LoongArch/龙芯架构参考手册卷一.pdf",
+        "bytes": 1586039
+      },
+      {
+        "zip_member": "06-用户手册/LoongArch/龙芯生态白皮书（2022年）.pdf",
+        "path": "06-用户手册/LoongArch/龙芯生态白皮书（2022年）.pdf",
+        "bytes": 19084688
+      },
+      {
+        "zip_member": "06-用户手册/协议规范/802.3协议英文原版_2018年.pdf",
+        "path": "06-用户手册/协议规范/802.3协议英文原版_2018年.pdf",
+        "bytes": 98279242
+      },
+      {
+        "zip_member": "06-用户手册/协议规范/can/CAN入门教程.pdf",
+        "path": "06-用户手册/协议规范/can/CAN入门教程.pdf",
+        "bytes": 1904017
+      },
+      {
+        "zip_member": "06-用户手册/协议规范/can/CAN协议英文原版.pdf",
+        "path": "06-用户手册/协议规范/can/CAN协议英文原版.pdf",
+        "bytes": 330385
+      },
+      {
+        "zip_member": "06-用户手册/协议规范/usb/USB2.0协议中文版.pdf",
+        "path": "06-用户手册/协议规范/usb/USB2.0协议中文版.pdf",
+        "bytes": 1151439
+      },
+      {
+        "zip_member": "06-用户手册/协议规范/usb/USB2.0协议英文原版(全).pdf",
+        "path": "06-用户手册/协议规范/usb/USB2.0协议英文原版(全).pdf",
+        "bytes": 5983789
+      },
+      {
+        "zip_member": "06-用户手册/协议规范/usb/USB3.0协议中文版.pdf",
+        "path": "06-用户手册/协议规范/usb/USB3.0协议中文版.pdf",
+        "bytes": 3540526
+      },
+      {
+        "zip_member": "06-用户手册/协议规范/usb/USB_LANGIDs.pdf",
+        "path": "06-用户手册/协议规范/usb/USB_LANGIDs.pdf",
+        "bytes": 33803
+      },
+      {
+        "zip_member": "06-用户手册/协议规范/设备树/Devicetree SpecificationV0.2.pdf",
+        "path": "06-用户手册/协议规范/设备树/Devicetree SpecificationV0.2.pdf",
+        "bytes": 358973
+      },
+      {
+        "zip_member": "06-用户手册/协议规范/设备树/Power_ePAPR_APPROVED_v1.12.pdf",
+        "path": "06-用户手册/协议规范/设备树/Power_ePAPR_APPROVED_v1.12.pdf",
+        "bytes": 1935453
+      },
+      {
+        "zip_member": "06-用户手册/参考资料/Buildroot学习参考资料.zip",
+        "path": "06-用户手册/参考资料/Buildroot学习参考资料.zip",
+        "bytes": 9451567
+      },
+      {
+        "zip_member": "06-用户手册/参考资料/Gcc学习参考资料.zip",
+        "path": "06-用户手册/参考资料/Gcc学习参考资料.zip",
+        "bytes": 7034046
+      },
+      {
+        "zip_member": "06-用户手册/参考资料/Git参考资料.zip",
+        "path": "06-用户手册/参考资料/Git参考资料.zip",
+        "bytes": 7551780
+      },
+      {
+        "zip_member": "06-用户手册/参考资料/LinuxC编程参考资料.zip",
+        "path": "06-用户手册/参考资料/LinuxC编程参考资料.zip",
+        "bytes": 14864066
+      },
+      {
+        "zip_member": "06-用户手册/参考资料/linux基础知识学习参考资料.zip",
+        "path": "06-用户手册/参考资料/linux基础知识学习参考资料.zip",
+        "bytes": 33990130
+      },
+      {
+        "zip_member": "06-用户手册/参考资料/Makefile学习参考资料.zip",
+        "path": "06-用户手册/参考资料/Makefile学习参考资料.zip",
+        "bytes": 1543459
+      },
+      {
+        "zip_member": "06-用户手册/参考资料/ubuntu学习参考资料.zip",
+        "path": "06-用户手册/参考资料/ubuntu学习参考资料.zip",
+        "bytes": 1768556
+      },
+      {
+        "zip_member": "06-用户手册/参考资料/终极内存技术指南.pdf",
+        "path": "06-用户手册/参考资料/终极内存技术指南.pdf",
+        "bytes": 8607983
+      },
+      {
+        "zip_member": "06-用户手册/参考资料/跟我一起写Makefile.pdf",
+        "path": "06-用户手册/参考资料/跟我一起写Makefile.pdf",
+        "bytes": 593197
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/ATK-4.3' RGBLCD 模块用户手册V1.5.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/ATK-4.3' RGBLCD 模块用户手册V1.5.pdf",
+        "bytes": 945697
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/联系我们-正点原子.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/联系我们-正点原子.pdf",
+        "bytes": 226826
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/10，联系我们-正点原子.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/10，联系我们-正点原子.pdf",
+        "bytes": 226826
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/1，原子哥给您的一封信.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/1，原子哥给您的一封信.pdf",
+        "bytes": 217487
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/2，扫码下载原子哥APP学习更流畅.png",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/2，扫码下载原子哥APP学习更流畅.png",
+        "bytes": 33033
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/3，原子哥在线教学平台-数千讲视频免费学习.html",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/3，原子哥在线教学平台-数千讲视频免费学习.html",
+        "bytes": 228
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/4，请扫码关注正点原子公众号获取最新资料.jpg",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/4，请扫码关注正点原子公众号获取最新资料.jpg",
+        "bytes": 8574
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/5，正点原子官方B站首页.html",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/5，正点原子官方B站首页.html",
+        "bytes": 240
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/6，正点原子官方社区-开源电子网.html",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/6，正点原子官方社区-开源电子网.html",
+        "bytes": 226
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/7，正点原子官方淘宝店.html",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/7，正点原子官方淘宝店.html",
+        "bytes": 230
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/8，正点原子资料下载链接.html",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/8，正点原子资料下载链接.html",
+        "bytes": 248
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/正点原子产品选型手册_202104.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/0，【必看信息】正点原子&原子哥/正点原子产品选型手册_202104.pdf",
+        "bytes": 26028241
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/1，ATK-4.3' RGBLCD 模块原理图/ATK-4.3' RGBLCD_V1.5.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/1，ATK-4.3' RGBLCD 模块原理图/ATK-4.3' RGBLCD_V1.5.pdf",
+        "bytes": 257098
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/1，ATK-4.3' RGBLCD 模块原理图/封装库/99SE版本/ATK-4.3' RGB屏模块_V1.5_PCB.lib",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/1，ATK-4.3' RGBLCD 模块原理图/封装库/99SE版本/ATK-4.3' RGB屏模块_V1.5_PCB.lib",
+        "bytes": 89638
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/1，ATK-4.3' RGBLCD 模块原理图/封装库/99SE版本/ATK-4.3' RGB屏模块_V1.5_SCH.lib",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/1，ATK-4.3' RGBLCD 模块原理图/封装库/99SE版本/ATK-4.3' RGB屏模块_V1.5_SCH.lib",
+        "bytes": 14722
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/1，ATK-4.3' RGBLCD 模块原理图/封装库/AD9版本/ATK-4.3' RGB屏模块_V1.5.IntLib",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/1，ATK-4.3' RGBLCD 模块原理图/封装库/AD9版本/ATK-4.3' RGB屏模块_V1.5.IntLib",
+        "bytes": 160768
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/readme.txt",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/readme.txt",
+        "bytes": 1104
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（HAL库版本，适合北极星STM32F750开发板）实验32 触摸屏实验.zip",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（HAL库版本，适合北极星STM32F750开发板）实验32 触摸屏实验.zip",
+        "bytes": 1722449
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（HAL库版本，适合北极星STM32H750开发板）实验32 触摸屏实验.zip",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（HAL库版本，适合北极星STM32H750开发板）实验32 触摸屏实验.zip",
+        "bytes": 1805582
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（HAL库版本，适合阿波罗STM32F429开发板）实验30 触摸屏实验.zip",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（HAL库版本，适合阿波罗STM32F429开发板）实验30 触摸屏实验.zip",
+        "bytes": 1160753
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（HAL库版本，适合阿波罗STM32F767开发板）实验31 触摸屏实验.zip",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（HAL库版本，适合阿波罗STM32F767开发板）实验31 触摸屏实验.zip",
+        "bytes": 1239552
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（HAL库版本，适合阿波罗STM32H743开发板）实验31 触摸屏实验.zip",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（HAL库版本，适合阿波罗STM32H743开发板）实验31 触摸屏实验.zip",
+        "bytes": 1797380
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（寄存器版本，适合北极星STM32F750开发板）实验32 触摸屏实验.zip",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（寄存器版本，适合北极星STM32F750开发板）实验32 触摸屏实验.zip",
+        "bytes": 458444
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（寄存器版本，适合北极星STM32H750开发板）实验32 触摸屏实验.zip",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（寄存器版本，适合北极星STM32H750开发板）实验32 触摸屏实验.zip",
+        "bytes": 583287
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（寄存器版本，适合阿波罗STM32F429开发板）实验30 触摸屏实验.zip",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（寄存器版本，适合阿波罗STM32F429开发板）实验30 触摸屏实验.zip",
+        "bytes": 348443
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（寄存器版本，适合阿波罗STM32F767开发板）实验31 触摸屏实验.zip",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（寄存器版本，适合阿波罗STM32F767开发板）实验31 触摸屏实验.zip",
+        "bytes": 376494
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（寄存器版本，适合阿波罗STM32H743开发板）实验31 触摸屏实验.zip",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/2，程序源码/（寄存器版本，适合阿波罗STM32H743开发板）实验31 触摸屏实验.zip",
+        "bytes": 572651
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/Application Note for CTPM_FocalTech.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/Application Note for CTPM_FocalTech.pdf",
+        "bytes": 348886
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT1151Q数据手册.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT1151Q数据手册.pdf",
+        "bytes": 1893815
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT1151Q编程指南.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT1151Q编程指南.pdf",
+        "bytes": 1464156
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT9147数据手册.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT9147数据手册.pdf",
+        "bytes": 988519
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT9147编程指南.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT9147编程指南.pdf",
+        "bytes": 591581
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT917S 数据手册.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT917S 数据手册.pdf",
+        "bytes": 1718855
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT917S编程指南.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/3，触摸屏参考资料/GT917S编程指南.pdf",
+        "bytes": 2095646
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/MP3302_r0.98.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/MP3302_r0.98.pdf",
+        "bytes": 264355
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/RT9193.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/RT9193.pdf",
+        "bytes": 187349
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/XPT2046.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/XPT2046.pdf",
+        "bytes": 387524
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/ATK43118(480x272)裸屏资料/ATK43118_OUTLINE.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/ATK43118(480x272)裸屏资料/ATK43118_OUTLINE.pdf",
+        "bytes": 373859
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/ATK43118(480x272)裸屏资料/ATK43118_SPEC_v0.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/ATK43118(480x272)裸屏资料/ATK43118_SPEC_v0.pdf",
+        "bytes": 897689
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/ATK43138(800x480)裸屏资料/ATK43138_OUTLINE.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/ATK43138(800x480)裸屏资料/ATK43138_OUTLINE.pdf",
+        "bytes": 197018
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/ATK43138(800x480)裸屏资料/ATK43138_SPEC_v0.pdf",
+        "path": "06-用户手册/LCD/【正点原子】4.3寸RGBLCD电容触摸屏模块资料/4，数据手册/ATK43138(800x480)裸屏资料/ATK43138_SPEC_v0.pdf",
+        "bytes": 2247860
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/正点原子ATK-MD0700R模块用户手册.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/正点原子ATK-MD0700R模块用户手册.pdf",
+        "bytes": 1131442
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/联系我们-正点原子.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/联系我们-正点原子.pdf",
+        "bytes": 683967
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/1，原理图/ATK-MD0700R V1.4.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/1，原理图/ATK-MD0700R V1.4.pdf",
+        "bytes": 457316
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/1，原理图/ATK-MD0700R封装库.rar",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/1，原理图/ATK-MD0700R封装库.rar",
+        "bytes": 2659036
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/2，程序源码/readme.txt",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/2，程序源码/readme.txt",
+        "bytes": 984
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/2，程序源码/北极星板STM32F750-H750.zip",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/2，程序源码/北极星板STM32F750-H750.zip",
+        "bytes": 8334185
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/2，程序源码/阿波罗板和水星板STM32F429-F767-H743.zip",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/2，程序源码/阿波罗板和水星板STM32F429-F767-H743.zip",
+        "bytes": 10064180
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/3，模块芯片手册/FT5x26 Datasheet（V01）.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/3，模块芯片手册/FT5x26 Datasheet（V01）.pdf",
+        "bytes": 2113747
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/3，模块芯片手册/FT5X26-5426-5526DataSheet-V1.1.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/3，模块芯片手册/FT5X26-5426-5526DataSheet-V1.1.pdf",
+        "bytes": 625151
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/3，模块芯片手册/GT911数据手册.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/3，模块芯片手册/GT911数据手册.pdf",
+        "bytes": 1826211
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/AMS1117.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/AMS1117.pdf",
+        "bytes": 88100
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/Application Note for CTPM_FocalTech.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/Application Note for CTPM_FocalTech.pdf",
+        "bytes": 348886
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/BAT54.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/BAT54.pdf",
+        "bytes": 91707
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/MP3302_r0.98.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/MP3302_r0.98.pdf",
+        "bytes": 264355
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/tps61040.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/tps61040.pdf",
+        "bytes": 716992
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/ATK-MD0700R-1024x600裸屏资料/ATK-MD0700R_OUTLINE_FT5426_V1.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/ATK-MD0700R-1024x600裸屏资料/ATK-MD0700R_OUTLINE_FT5426_V1.pdf",
+        "bytes": 358801
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/ATK-MD0700R-1024x600裸屏资料/ATK-MD0700R_SPEC V0 .pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/ATK-MD0700R-1024x600裸屏资料/ATK-MD0700R_SPEC V0 .pdf",
+        "bytes": 1492683
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/ATK-MD0700R-1024x600裸屏资料/readme.txt",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/ATK-MD0700R-1024x600裸屏资料/readme.txt",
+        "bytes": 955
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/ATK-MD0700R-800x480裸屏资料/AT070TN92.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/ATK-MD0700R-800x480裸屏资料/AT070TN92.pdf",
+        "bytes": 748314
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/ATK-MD0700R-800x480裸屏资料/ATK-MD0700R_OUTLINE_FT5426_V1.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/4，其他资料/ATK-MD0700R-800x480裸屏资料/ATK-MD0700R_OUTLINE_FT5426_V1.pdf",
+        "bytes": 358801
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/10，联系我们-正点原子.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/10，联系我们-正点原子.pdf",
+        "bytes": 683967
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/1，原子哥给您的一封信.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/1，原子哥给您的一封信.pdf",
+        "bytes": 225405
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/2，扫码下载原子哥APP学习更流畅.png",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/2，扫码下载原子哥APP学习更流畅.png",
+        "bytes": 33033
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/3，原子哥在线教学平台-数千讲视频免费学习.html",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/3，原子哥在线教学平台-数千讲视频免费学习.html",
+        "bytes": 228
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/4，请扫码关注正点原子公众号获取最新资料.jpg",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/4，请扫码关注正点原子公众号获取最新资料.jpg",
+        "bytes": 8574
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/5，正点原子官方B站首页.html",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/5，正点原子官方B站首页.html",
+        "bytes": 240
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/6，正点原子官方社区-开源电子网.html",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/6，正点原子官方社区-开源电子网.html",
+        "bytes": 226
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/7，正点原子官方淘宝店.html",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/7，正点原子官方淘宝店.html",
+        "bytes": 230
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/8，正点原子资料下载链接.html",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/8，正点原子资料下载链接.html",
+        "bytes": 248
+      },
+      {
+        "zip_member": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/9，正点原子产品选型手册_202201.pdf",
+        "path": "06-用户手册/LCD/【正点原子】7寸RGB LCD电容触摸屏模块资料/【必看】正点原子关键信息/9，正点原子产品选型手册_202201.pdf",
+        "bytes": 16994963
+      }
+    ],
+    "芯片手册": [
+      {
+        "zip_member": "07-芯片手册/龙芯2K0300处理器数据手册.pdf",
+        "path": "07-芯片手册/龙芯2K0300处理器数据手册.pdf",
+        "bytes": 1614552
+      },
+      {
+        "zip_member": "07-芯片手册/龙芯2K0300处理器用户手册.pdf",
+        "path": "07-芯片手册/龙芯2K0300处理器用户手册.pdf",
+        "bytes": 3825725
+      }
+    ],
+    "常用工具软件": [
+      {
+        "zip_member": "08-常用工具软件/CH341SER.EXE",
+        "path": "08-常用工具软件/CH341SER.EXE",
+        "bytes": 799096
+      },
+      {
+        "zip_member": "08-常用工具软件/cmder_mini.zip",
+        "path": "08-常用工具软件/cmder_mini.zip",
+        "bytes": 12293846
+      },
+      {
+        "zip_member": "08-常用工具软件/DGEngSetup5601565.exe",
+        "path": "08-常用工具软件/DGEngSetup5601565.exe",
+        "bytes": 64308544
+      },
+      {
+        "zip_member": "08-常用工具软件/Git-2.45.2-64-bit.exe",
+        "path": "08-常用工具软件/Git-2.45.2-64-bit.exe",
+        "bytes": 68131584
+      },
+      {
+        "zip_member": "08-常用工具软件/MobaXterm_Installer_v24.1.zip",
+        "path": "08-常用工具软件/MobaXterm_Installer_v24.1.zip",
+        "bytes": 42107896
+      },
+      {
+        "zip_member": "08-常用工具软件/qt-online-installer-windows-x64-4.8.0.exe",
+        "path": "08-常用工具软件/qt-online-installer-windows-x64-4.8.0.exe",
+        "bytes": 49776704
+      },
+      {
+        "zip_member": "08-常用工具软件/tftpd64.464.zip",
+        "path": "08-常用工具软件/tftpd64.464.zip",
+        "bytes": 570762
+      },
+      {
+        "zip_member": "08-常用工具软件/USB转串口驱动-CH340.zip",
+        "path": "08-常用工具软件/USB转串口驱动-CH340.zip",
+        "bytes": 183443
+      },
+      {
+        "zip_member": "08-常用工具软件/VMware-workstation-full-17.5.2-23775571.exe",
+        "path": "08-常用工具软件/VMware-workstation-full-17.5.2-23775571.exe",
+        "bytes": 648295400
+      },
+      {
+        "zip_member": "08-常用工具软件/tftpd64.464/EUPL-EN.pdf",
+        "path": "08-常用工具软件/tftpd64.464/EUPL-EN.pdf",
+        "bytes": 34312
+      },
+      {
+        "zip_member": "08-常用工具软件/tftpd64.464/rootfs.img",
+        "path": "08-常用工具软件/tftpd64.464/rootfs.img",
+        "bytes": 153090789
+      },
+      {
+        "zip_member": "08-常用工具软件/tftpd64.464/tftpd32.chm",
+        "path": "08-常用工具软件/tftpd64.464/tftpd32.chm",
+        "bytes": 364722
+      },
+      {
+        "zip_member": "08-常用工具软件/tftpd64.464/tftpd32.ini",
+        "path": "08-常用工具软件/tftpd64.464/tftpd32.ini",
+        "bytes": 616
+      },
+      {
+        "zip_member": "08-常用工具软件/tftpd64.464/tftpd64.exe",
+        "path": "08-常用工具软件/tftpd64.464/tftpd64.exe",
+        "bytes": 392704
+      },
+      {
+        "zip_member": "08-常用工具软件/tftpd64.464/u-boot-with-spl.bin",
+        "path": "08-常用工具软件/tftpd64.464/u-boot-with-spl.bin",
+        "bytes": 931496
+      },
+      {
+        "zip_member": "08-常用工具软件/tftpd64.464/uImage",
+        "path": "08-常用工具软件/tftpd64.464/uImage",
+        "bytes": 10899204
+      }
+    ]
+  }
+}

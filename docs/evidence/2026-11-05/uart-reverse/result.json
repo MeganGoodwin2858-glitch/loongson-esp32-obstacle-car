@@ -1,0 +1,54 @@
+{
+  "nonzero_drive_sent": false,
+  "uart_op_sent": "ESTOP only",
+  "initial": {
+    "ok": true,
+    "ready": true,
+    "armed": false,
+    "estop": false,
+    "ble": false,
+    "web": false,
+    "mode": 0,
+    "left": 0,
+    "right": 0,
+    "session": 0
+  },
+  "console_exit": 0,
+  "after": {
+    "ok": true,
+    "ready": true,
+    "armed": false,
+    "estop": true,
+    "ble": false,
+    "web": false,
+    "mode": 0,
+    "left": 0,
+    "right": 0,
+    "session": 0
+  },
+  "uart_estop_acknowledged": true,
+  "clear": {
+    "ok": true,
+    "ready": true,
+    "armed": false,
+    "estop": false,
+    "ble": false,
+    "web": false,
+    "mode": 0,
+    "left": 0,
+    "right": 0,
+    "session": 0
+  },
+  "final": {
+    "ok": true,
+    "ready": true,
+    "armed": false,
+    "estop": false,
+    "ble": false,
+    "web": false,
+    "mode": 0,
+    "left": 0,
+    "right": 0,
+    "session": 0
+  }
+}

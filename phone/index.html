@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>小智 360° 蓝牙手柄</title><style>
+*{box-sizing:border-box}body{margin:0;background:#0b1522;color:#ecf4fb;font:16px system-ui,sans-serif;padding:22px;max-width:620px;margin:auto}
+h1{font-size:25px;margin:12px 0 5px}p{color:#adc0d2;line-height:1.6}button,select{font:inherit;border:1px solid #405773;border-radius:12px;background:#1a3047;color:inherit;padding:13px;margin:4px;cursor:pointer}
+button:disabled{opacity:.4}#pad{width:min(78vw,330px);height:min(78vw,330px);border:2px solid #426781;border-radius:50%;position:relative;margin:26px auto;touch-action:none;user-select:none;background:radial-gradient(circle,#173347 0 12%,#102638 12% 45%,#193b50 45% 46%,#102638 46%)}
+#pad:before,#pad:after{content:'';position:absolute;background:#34516a}#pad:before{width:1px;height:100%;left:50%}#pad:after{height:1px;width:100%;top:50%}
+#knob{position:absolute;left:50%;top:50%;width:58px;height:58px;background:#75ddc3;border:6px solid #b7f3df;border-radius:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 4px 18px #0007}
+#estop{display:block;width:100%;background:#aa2739;font-size:24px;font-weight:700;padding:18px;margin:20px 0 10px}#state{padding:14px;background:#18283a;border-radius:12px;min-height:52px}input{width:100%;accent-color:#75ddc3}small{color:#a9bdcf;line-height:1.6}.row{display:flex;flex-wrap:wrap;align-items:center}
+</style></head><body><h1>小智 · 360° 蓝牙手柄</h1><p>向前 / 后退 / 连续转弯 / 原地旋转</p>
+<div class="row"><button id="connect">连接小车</button><button id="disconnect">断开</button><select id="mode" aria-label="控制模式"><option value="0">手机手动</option><option value="1" id="auto">龙芯自动避障</option><option value="2">原网页 / 语音动作</option></select></div>
+<p id="state" role="status">尚未连接</p><label for="speed">速度上限 <strong id="speedValue">40%</strong></label><input id="speed" type="range" min="0" max="100" value="40">
+<div class="row"><button id="arm">使能本次操控</button><button id="stop">停车</button></div>
+<div id="pad" role="application" aria-label="拖动圆形摇杆，松手停车"><div id="knob"></div></div>
+<button id="estop">紧 急 停 止</button><button id="clear">解除急停（保持停车）</button>
+<p id="message" role="status">先连接并使能。松手停车后，再次使能才能继续。</p>
+<small>两轮差速底盘，不能横向平移。浏览器切到后台会请求停车；若请求丢失，固件在 300ms 未收到运动帧后停车。龙芯模式需要先配置 UART 接线及外部避障程序。请通过 HTTPS 或本机 localhost 打开。</small>
+<script src="controller.js"></script></body></html>

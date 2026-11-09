@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>小车 Wi-Fi 手柄</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0e1824;color:#edf5ff;font:16px system-ui,sans-serif}main{max-width:520px;margin:auto;padding:24px 22px}h1{font-size:25px;margin:0 0 8px}.sub{color:#b5c8d8;line-height:1.6}#state{background:#1d3042;border-radius:12px;padding:16px;margin:18px 0;font-weight:600}button{font:inherit;padding:14px 18px;border:0;border-radius:10px;background:#3879c5;color:white;touch-action:manipulation}button:disabled{opacity:.45}.row{display:flex;gap:12px;margin:14px 0}.row>*{flex:1}#estop{background:#c63147;font-weight:bold}#stop{background:#546477}#clear{background:#546477}label{display:block;margin:20px 0}input{width:100%;margin-top:15px}#pad{touch-action:none;user-select:none;position:relative;width:280px;height:280px;border-radius:50%;margin:24px auto;background:radial-gradient(circle,#2c465d 0 12%,#172c40 13% 65%,#34536d 66% 67%,#172c40 68%);border:2px solid #54748e}#pad:before{content:'前进';position:absolute;top:18px;left:120px;color:#b5c8d8}#pad:after{content:'后退';position:absolute;bottom:18px;left:120px;color:#b5c8d8}#knob{position:absolute;width:64px;height:64px;left:106px;top:106px;background:#62bdeb;border:3px solid #c5edff;border-radius:50%;pointer-events:none}#output{font-family:monospace;text-align:center;color:#a9d5ec}.note{font-size:14px;line-height:1.7;color:#b5c8d8}a{color:#83caff}
+</style>
+<main><h1>小车 Wi-Fi 手柄</h1><div class="sub">与小车处于同一 Wi-Fi，直接在手机浏览器使用。</div>
+<div id="state" role="status">正在读取小车状态…</div>
+<div class="row"><button id="arm" disabled>使能遥控</button><button id="stop">停车</button></div>
+<label>速度上限 <b id="speedText">40%</b><input id="speed" type="range" min="10" max="100" value="40" step="5"></label>
+<div id="pad" aria-label="按住拖动摇杆控制方向"><div id="knob"></div></div>
+<div id="output">左轮 0% · 右轮 0%</div>
+<div class="row"><button id="estop">紧急停止</button><button id="clear">解除急停</button></div>
+<p class="note">先点“使能遥控”，再按住摇杆拖动。上推前进，下拉后退，左右拖动转向；松手停车，再次行驶需重新使能。摇杆中心有死区，断网或切到后台会自动停车。</p>
+<p class="note">本页为手动模式。BLE 连接会接管并停车；龙芯自动模式继续由 BLE 手柄切换。轮速数值表示软件输出，请以实际车轮动作确认接线与供电。</p></main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id),pad=$('pad'),knob=$('knob');
+let token=0,seq=0,epoch=0,held=false,pointer=null,x=0,y=0,busy=false,arming=false;
+function resetPad(){held=false;pointer=null;x=y=0;knob.style.transform='translate(0px,0px)';}
+function status(s){
+  if(!s.web||!s.armed||s.estop||s.ble){token=0;resetPad();}
+  $('arm').disabled=arming||!s.ready||s.armed||s.estop||s.ble||s.mode!==0;
+  $('state').textContent=!s.ready?'电机控制未就绪，请检查启动日志':s.estop?'急停锁定：解除后仍需重新使能':s.ble?'BLE 已接管：请先断开 BLE':s.mode!==0?'当前非手动模式，请用 BLE 手柄切回手动':s.armed?(token?'已使能：按住摇杆行驶':'其他网页正在控制，请等待其停车'):'已连接：等待使能';
+  $('output').textContent=`左轮 ${s.left}% · 右轮 ${s.right}%`;
+}
+async function request(path,body,post=false){
+  const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),800);
+  try{const r=await fetch('/api/remote/'+path,{method:post?'POST':'GET',headers:post?{'X-Car-Control':'1','Content-Type':'application/octet-stream'}:{},body,cache:'no-store',signal:abort.signal,keepalive:post});
+    const s=await r.json();if(!r.ok||!s.ok)throw Error('控制被拒绝，请检查使能、急停或其他连接');return s;
+  }finally{clearTimeout(timer);}
+}
+function packet(op,session){
+  const b=new Uint8Array(20),v=new DataView(b.buffer);b.set([0xa5,1,op,Number($('speed').value)]);v.setUint32(4,++seq,true);
+  v.setInt16(8,op===1?x:0,true);v.setInt16(10,op===1?y:0,true);v.setUint32(12,session,true);
+  let c=0xffff;for(const n of b.subarray(0,18)){c^=n<<8;for(let i=0;i<8;i++)c=((c&0x8000)?(c<<1)^0x1021:c<<1)&0xffff;}v.setUint16(18,c,true);return b;
+}
+function failed(e){token=0;resetPad();$('arm').disabled=true;$('state').textContent='已停止控制：'+e.message;}
+async function pulse(){
+  if(busy||arming)return;busy=true;const current=epoch;
+  try{const s=token?await request('command',packet(1,token),true):await request('status');if(current===epoch)status(s);}
+  catch(e){if(current===epoch)failed(e);}finally{busy=false;}
+}
+async function stop(){
+  const previous=token;token=0;resetPad();const current=++epoch;
+  try{if(previous){const s=await request('command',packet(2,previous),true);if(current===epoch)status(s);}}
+  catch(e){if(current===epoch)failed(e);}
+}
+$('arm').onclick=async()=>{
+  if(arming||token)return;arming=true;$('arm').disabled=true;const current=++epoch;
+  try{const s=await request('arm',undefined,true);
+    if(current!==epoch){await request('command',packet(2,s.session),true);return;}
+    token=s.session;seq=0;status(s);
+  }catch(e){if(current===epoch)failed(e);}finally{arming=false;}
+};
+$('stop').onclick=()=>stop();
+$('estop').onclick=async()=>{token=0;resetPad();const current=++epoch;try{const s=await request('estop',undefined,true);if(current===epoch)status(s);}catch(e){failed(e);}};
+$('clear').onclick=async()=>{const current=epoch;try{const s=await request('clear',undefined,true);if(current===epoch)status(s);}catch(e){failed(e);}};
+$('speed').oninput=()=>{$('speedText').textContent=$('speed').value+'%';};
+function move(e){if(!held||pointer!==e.pointerId)return;const r=pad.getBoundingClientRect();let dx=(e.clientX-r.left-r.width/2)/(r.width*.38),dy=(r.top+r.height/2-e.clientY)/(r.height*.38);const scale=Math.max(1,Math.hypot(dx,dy));dx/=scale;dy/=scale;x=Math.round(dx*1000);y=Math.round(dy*1000);knob.style.transform=`translate(${dx*95}px,${-dy*95}px)`;}
+pad.onpointerdown=e=>{if(!token||arming)return;e.preventDefault();held=true;pointer=e.pointerId;pad.setPointerCapture(pointer);move(e);};
+pad.onpointermove=move;
+function release(e){if(held&&e.pointerId===pointer)stop();}
+pad.onpointerup=release;pad.onpointercancel=release;pad.onlostpointercapture=release;
+window.addEventListener('blur',()=>{if(token||arming)stop();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&(token||arming))stop();});
+window.addEventListener('pagehide',()=>stop());
+setInterval(pulse,80);pulse();
+</script></html>
